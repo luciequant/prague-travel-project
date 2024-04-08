@@ -11,6 +11,16 @@ body {
   margin: 0 auto;
   color: white;
 }
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+}
+
+section {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/castle.jpeg");
@@ -46,7 +56,7 @@ header a {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.5;
-  color: #030413;
+  color: white;
   padding: 16px 32px;
   margin-top: 60px;
   text-align: center;
@@ -54,17 +64,45 @@ header a {
   letter-spacing: 5px;
   text-decoration: none;
   text-transform: uppercase;
-  background: white;
+  background: #15151593;
   border-radius: 4px;
 }
 footer {
-  text-align: center;
-  padding: 40px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/view.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 100px 20px;
+  color: white;
+  font-family: var(--third-font-family);
 }
+footer h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1;
+}
+footer p {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+  margin-right: 20px;
+  line-height: 24px;
+}
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 footer a {
-  text-decoration: none;
-  color: #4e5357;
+  color: white;
+  opacity: 0.7;
 }
+
 @media (max-width: 900px) {
   header {
     padding: 70px 0;
