@@ -1,6 +1,87 @@
-h1 {
-  font-family: "Rochester", cursive;
-  font-size: 96px;
-  line-height: 144px;
+:root {
+  --heading-font-family: "Rochester", cursive;
+  --second-font-family: "Rosarivo", cursive;
+  --third-font-family: "Open Sans", sans-serif;
+}
+body {
+  background: #030413;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  color: white;
+}
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/castle.jpeg");
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
   text-align: center;
+  padding: 200px 0;
+}
+
+header h1 {
+  font-family: var(--heading-font-family);
+  font-size: 96px;
+  line-height: 1;
+  font-size: 104px;
+  margin: 18px 0;
+}
+
+header h2 {
+  font-family: var(--second-font-family);
+  margin-top: 70px;
+  font-size: 34px;
+  line-height: 1.5;
+}
+header h3 {
+  font-family: var(--third-font-family);
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 5px;
+  margin: 0;
+}
+header a {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #030413;
+  padding: 16px 32px;
+  margin-top: 60px;
+  text-align: center;
+  display: inline-block;
+  letter-spacing: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: white;
+  border-radius: 4px;
+}
+footer {
+  text-align: center;
+  padding: 40px;
+}
+footer a {
+  text-decoration: none;
+  color: #4e5357;
+}
+@media (max-width: 900px) {
+  header {
+    padding: 70px 0;
+    background-size: cover;
+  }
+
+  header h1 {
+    font-size: 48px;
+    margin-top: 50px;
+  }
+
+  header h2 {
+    font-size: 18px;
+    margin-top: 90px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
 }
