@@ -27,13 +27,64 @@ body {
 .grid-3-columns-with-first-narrow {
   grid-template-columns: 1fr 2fr 2fr;
 }
-
-section {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 100px 0;
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
 }
-
+.card {
+  background: white;
+  color: black;
+  margin: 30px 0;
+}
+.card-body {
+  padding: 30px;
+}
+.card h4 {
+  font-family: var(--third-font-family);
+  font-size: 22px;
+  line-height: 1;
+  margin: 0;
+  border-radius: 4px;
+}
+.card h5 {
+  font-family: var(--third-font-family);
+  font-size: 16px;
+  line-height: 1;
+  margin: 0;
+}
+.card p {
+  color: black;
+  font-family: var(--third-font-family);
+}
+.btn {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  color: white;
+  padding: 16px 32px;
+  margin-top: 30px;
+  text-align: center;
+  display: block;
+  letter-spacing: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #1c1b1f;
+  border-radius: 4px;
+}
+.card-footer {
+  margin-top: 50px;
+}
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 100px;
+}
+.secondary {
+  background: rgb(111, 108, 108);
+}
+.text-center {
+  text-align: center;
+}
 header {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     url("../images/castle.jpeg");
@@ -83,7 +134,9 @@ header a {
 .img-responsive {
   max-width: 100%;
 }
-
+main {
+  background-color: #1c1b1f;
+}
 main h2 {
   font-size: 18px;
   line-height: 1.5;
