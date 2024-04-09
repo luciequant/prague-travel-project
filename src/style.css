@@ -88,6 +88,9 @@ section {
   margin: 0 auto;
   padding: 100px;
 }
+.heading {
+  padding-bottom: 30px;
+}
 .secondary {
   background: rgb(111, 108, 108);
 }
@@ -143,6 +146,7 @@ header a {
 .img-responsive {
   max-width: 100%;
 }
+
 main {
   background-color: #1c1b1f;
 }
@@ -173,6 +177,7 @@ main p {
   font-family: var(--third-font-family);
   opacity: 0.7;
 }
+
 footer {
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("../images/view.jpeg");
